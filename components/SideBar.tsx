@@ -10,7 +10,7 @@ const SideBar = () => {
   const [chats, loading, error] = useCollection(
     session && collection(db,'users',session?.user?.email!, "chats")
   );
-  console.log(chats)
+  // console.log(chats)
   return (
     <div className="flex flex-col h-screen p-2">
         <div className="flex-1">
